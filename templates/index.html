@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta CEP</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Consulte um CEP</h1>
+        <form id="cep-form">
+            <input type="text" id="cep-input" placeholder="Digite o CEP (só números)" maxlength="8" required>
+            <button type="submit">Consultar</button>
+        </form>
+        <div id="resultado">
+            <!-- Os resultados aparecerão aqui -->
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
